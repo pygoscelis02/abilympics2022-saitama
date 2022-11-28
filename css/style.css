@@ -1,0 +1,2093 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+/*デスクトップ用ページのCSSスタイル ここから*/
+
+
+
+/*全ページに適用するCSSスタイル　ここから*/
+
+
+*{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /* outline: 1px solid #ff0000; */
+}
+
+body {
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    margin: 0;
+    background-color: #b1ada0d5;
+  }
+
+#wrapper {
+    max-width: 1280px;
+    min-width: 320px;
+    margin: 0 auto;
+    color: #3D3832;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+
+p {
+    margin: 0;
+    line-height: 2em;
+    padding: 0;
+    color: #514B42;
+}
+
+a {
+    text-decoration: none;
+    color: #514B42;
+}
+
+hr {
+    border-left: 0 none black;
+    border-right: 0 none black;
+    border-bottom: 0 none black;
+    background-color: #E5E5E5;
+    border-top: 5px dotted #B0AC9E;
+    padding: 0 0 0 0;
+    margin: 10px 0;
+    height: 5px;
+}
+
+
+/*全ページ：ヘッダー部分 ここから*/
+
+header {
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background-color: white;
+    width:100%;
+}
+#headertitle {
+    height: 45px;
+    width: 175px;
+    margin-left: 10px;
+}
+#headermenu {
+    display: flex;
+    height: 45px;
+    margin-right: 10px;
+    align-items: center;
+    margin-top: 3px;
+}
+#headermenu a {
+    text-decoration: none;
+}
+
+#headermenu p {
+    font-size: 24px;
+    font-weight: bolder;
+    padding-top: 5px;
+}
+
+#headermenu img {
+    width: 45px;
+    margin-left: 10px;
+    filter: brightness(300%) opacity(70%) hue-rotate(5deg);
+}
+
+/*全ページ：ヘッダー部分 ここまで*/
+
+
+/*全ページ：パンくずリスト ここから*/
+
+nav {
+    height: 24px;
+    margin: 5px 0 5px 10px;
+}
+
+nav ol {
+    height: 24px;
+    margin: 0;
+    padding: 0px;
+}
+
+#breadcrumb{
+    display: flex;
+    align-items: center;
+
+}
+#breadcrumb li {
+    display: flex;
+    align-items: center;
+}
+#breadcrumb li p {
+    margin: 0 10px;
+    font-weight: bold;
+}
+#breadcrumb li a , #breadcrumb li span{
+    font-weight: bolder;
+}
+#breadcrumb li a {
+    text-decoration: none;
+}
+
+/*全ページ：パンくずリスト ここまで*/
+
+
+/*全ページ：フッター部分 ここから*/
+
+footer {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p{
+    font-size: 12px;
+}
+/*全ページ：フッター部分 ここまで*/
+
+
+/*全ページに適用するCSSスタイル ここまで*/
+
+
+
+/*トップページ用CSSスタイル ここから*/
+
+#wrapper-index {
+    width: 1280px;
+    background-size: cover;
+    /* [disabled]height: 100%; */
+    margin: 0 auto;
+    text-align: left;
+    /* [disabled]max-height: 1185px; */
+}
+
+#index {
+    margin-top: 20px;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 1040px;
+    margin-left: auto;
+    position: relative;
+    
+}
+
+#index .index-top   {
+    width: 1040px;
+}
+
+#index .catch    {
+    height: 40px;
+}
+
+#index .catch-one {
+    padding-left: 440px;
+}
+#index .index-top .map img{
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 15px;
+    width: 760px;
+    text-align: center;
+}
+#index .index-top .map {
+    text-align: center;
+}
+
+
+.index-bottom   {
+    margin: 0 auto;
+    width: 1040px;
+}
+.hint  {
+    height: 280px;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+    display: flex;
+    width: 1040px;
+    align-items: flex-end;
+}
+.hint img:first-child  {
+    height: 66px;
+    filter: brightness(200%);
+    margin-left: 250px;
+    margin-bottom: 153px;
+}
+.hint img:nth-child(2)   {
+    height: 56px;
+    margin-top: 0px;
+    margin-right: 56px;
+    margin-bottom: 140px;
+}
+.hint img:nth-child(3)   {
+    margin-left: 20px;
+margin-top: 100px;
+}
+
+.index-bottom .button-group {
+    display: flex;
+    width: 1040px;
+    align-items: flex-end;
+    padding: 0;
+    margin: 0;
+    justify-content: space-evenly;
+}
+
+.index-bottom .button-group li {
+    list-style: none;
+}
+
+.index-bottom .button-group img {
+    width: 112px;
+    margin: 0;
+    height: 112px;
+}
+
+.answer-text   {
+    height: 250px;
+    padding: 20px;
+    width: 1040px;
+    border-radius: 40px;
+    margin: auto;
+    background-color: white;
+}
+
+.answer-text a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.answer-group   {
+    width: 1040px;
+    margin: 0px auto 30px;
+}
+#answer-rice {
+    position: relative;
+    top: auto;
+    /* bottom: 800px; */
+}
+/* #answer-vegitable {
+    position: absolute;
+    bottom: 0px;
+}
+#answer-wheat {
+    position: absolute;
+    bottom: -4px;
+} */
+
+
+
+.answer-group .map-distribution {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 163px;
+}
+.answer-group .answer-text {
+    margin-top: 30px;
+}
+
+
+
+
+
+/*「答え」部分の表示非表示と形状*/
+.answer-group {
+    /* [disabled]display: none; *//*はじめは非表示*/
+    /* [disabled]opacity: 0; *//*透過0*/
+	/*background: #fff;*/
+  	/*padding:50px 20px;*/
+}
+
+
+
+
+
+/*！！！トップページ「アニメーション」用CSSスタイル　ここから！！！*/
+
+
+/*liにactiveクラスがついた時の形状*/
+.button-group li.active a{
+  filter: brightness(-1%);
+}
+
+/*areaにis-activeというクラスがついた時の形状*/
+.answer-group.is-active {
+    display: block;/*表示*/
+    animation-name: displayAnime;/*ふわっと表示させるためのアニメーション*/
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.answer-group{
+    display: none;/*はじめは非表示*/
+    opacity: 0;/*透過0*/
+}
+
+
+
+@keyframes displayAnime{
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*！！！トップページ「アニメーション」用CSSスタイル　ここまで！！！*/
+
+
+/*トップページ用CSSスタイル　ここまで*/
+
+
+
+/*リストページと詳細ページの両方に適用するCSSスタイル ここから*/
+
+#sample_note, #all_list {
+    margin-top: 90px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 90px;
+}
+
+#sample_note h1, #all_list h1   {
+    background-color: #FFFFFF;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    border-radius: 7.5px;
+    padding: 0;
+    justify-content: center;
+    margin: auto;
+    width: 1020px;
+}
+
+#sample_note h1 img, #all_list h1 img {
+    height: 32px;
+    margin-bottom: 0px;
+}
+
+.sample-introduction article , .list-introduction article{
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 910px;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+}
+
+/*リストページと詳細ページの両方に適用するCSSスタイル ここまで*/
+
+
+
+/*リストページに適用するCSSスタイル ここから*/
+
+.list-introduction article {
+    margin-bottom: 30px;
+}
+
+
+.list  {
+    margin: 0 auto;
+    /* [disabled]height: 1985px; */
+    padding: 55px;
+    border-radius: 20px;
+    width: 1020px;
+    background-color: #E5E5E5;
+}
+
+.list ul {
+    padding: 0;
+
+}
+.list ul li {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    height: 232px;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.list ul li .cuisine-name {
+    font-weight: bold;
+    width: 910px;
+    font-size: 18px;
+}
+
+.list ul li img {
+    width: 276px;
+    height: 185px;
+    border-radius: 15px;
+}
+ul li .list_text-right {
+    padding: 0 0 0 18px;
+    width: 627px;
+}
+ul li .level {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+    width:489px;
+}
+ul li .level p:first-child, ul li .level p:nth-child(3) {
+    width: 199px;
+}
+ul li .level p:nth-child(2)  , ul li .level p:nth-child(4){
+    padding: 0px 0px 0px 10px;
+    width: 279px;
+}
+ul li .list-content-text {
+    height: 120px;
+}
+
+.list-comment article   {
+    margin-top: 90px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 910px;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+}
+.list-comment article p {
+    margin: 0 0 19px;
+    font-size: 16px;
+}
+.list-comment article p:first-child  {
+    font-size: 18px;
+    width: inherit;
+    /* [disabled]justify-content: center; */
+    text-align: center;
+
+}
+
+
+
+
+/*リストページに適用するCSSスタイル ここまで*/
+
+
+
+/*詳細ページに適用するCSSスタイル ここから*/
+
+
+/*（注）詳細ページ構成
+サブコンテンツ：「導入」の項目（写真(大)と郷土料理の簡単な紹介）
+メインコンテンツ：「旅行」の項目、「料理」の項目
+*/
+
+
+/*詳細ページの「導入」に適用するCSSスタイル ここから*/
+
+.main-introduction {
+    margin-bottom: 45px;
+}
+
+.introduction-photo   {
+    width: 910px;
+    border-radius: 10px;
+    height: 387px;
+}
+
+.textandpicture_left   {
+    margin-right: 0;
+    margin-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 715px;
+    margin-top: 30px;
+}
+
+.shirakobato {
+    width: 120px;
+    margin-top: 77px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    height: 120px;
+
+}
+
+.balloon_left   {
+    width: 216px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    margin-right: 47px;
+    margin-top: 15px;
+}
+
+.balloon_right {
+    width: 270px;
+    margin-top: 15px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    height: 162px;
+}
+
+.shibusawa   {
+    width: 190px;
+    height: 332px;
+    padding: 10px;
+    margin-top: 60px;
+}
+
+/*詳細ページの「導入」に適用するCSSスタイル ここまで*/
+
+
+/*詳細ページの「旅行」と「料理」両方に適用するCSSスタイル ここから*/
+
+.main-article  {
+    margin-right: 130px;
+    margin-bottom: 0;
+    margin-left: 130px;
+    margin-top: 75px;
+    /* [disabled]height: 1985px; */
+    width: 1020px;
+}
+
+.main-article .title   {
+    margin-right: 55px;
+    margin-bottom: 30px;
+    margin-left: 55px;
+    display: flex;
+    height: 65px;
+}
+
+.lightbulb {
+    width: 52px;
+    height: 65px;
+    margin-right: -52px;
+    z-index: 2;
+}
+
+h2   {
+    /* [disabled]background-color: #FFFFFF; */
+    /* [disabled]display: flex; */
+    /* [disabled]align-items: center; */
+    /* [disabled]justify-content: center; */
+    /* [disabled]width: 1020px; */
+    /* [disabled]border-radius: 30px; */
+    /* [disabled]z-index: 1; */
+}
+
+#sample_note h2   {
+    background-color: #FFFFFF;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1020px;
+    border-radius: 30px;
+    z-index: 1;
+}
+
+#travel , #recipe{
+    margin: auto;
+    width: 1020px;
+    background-color: #E5E5E5;
+    padding-top: 30px;
+    border-radius: 20px;
+    padding-bottom: 50px;
+}
+
+.travel-contents  , .recipe-contents{
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+    width: 910px;
+
+}
+
+h3 {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+/*詳細ページの「旅行」と「料理」両方に適用するCSSスタイル ここまで*/
+
+
+/*詳細ページの「旅行」に適用するCSSスタイル ここから*/
+
+main-introduction  {
+    padding: 10px 0;
+}
+
+.restaurant-introduction    {
+    display: flex;
+    height: 217px;
+    justify-content: space-between;
+}
+.restaurant-introduction img {
+    width: 323px;
+    border-radius: 10px;
+    height: 217px;
+}
+.restaurant-introduction .text {
+    width: 575px;
+    font-size: 16px;
+}
+.recommendation  {
+    height: 253px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.recommendation img {
+    width: 369px;
+    border-radius: 10px;
+    height: 253px;
+}
+.recommendation .text {
+    width: 529px;
+    font-size: 16px;
+}
+#travel h4 {
+    padding: 15px 0;
+}
+#travel .text :first-child  {
+    padding: 5px 0;
+    margin: 0;
+    font-size: 16px;
+
+}
+#travel .text :nth-child(2)   {
+    margin: 0;
+    line-height: 1.5em;
+    line-height: 1.85em;
+}
+.travel-longphoto {
+    width: 910px;
+    border-radius: 10px;
+    height: 218px;
+}
+
+/*詳細ページの「旅行」に適用するCSSスタイル ここまで*/
+
+
+/*詳細ページの「料理」に適用するCSSスタイル ここから*/
+
+.recipe-first-row {
+    height: 333px;
+    display: flex;
+    justify-content: space-between;
+    width: 910px;
+    margin-top: 10px;
+}
+.recipe-first-row img {
+    border-radius: 10px;
+    height: 333px;
+}
+
+.ingredients {
+    width: 487px;
+}
+
+.recipe-list {
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.recipe-list ul {
+    margin: 5px 0 0 0;
+    padding: 0;
+}
+
+.recipe-list li  {
+    font-size: 16px;
+    padding: 4px 0;
+    list-style: none;
+}
+
+.cooking-instruction {
+    display: flex;
+    justify-content: space-between;
+    width: 910px;
+    flex-wrap: wrap;
+}
+
+#recipe h4 {
+    margin: 5px 0;
+}
+
+.cooking-instruction ul   {
+    padding: 0;
+    margin: 0;
+    width: 625px;
+}
+
+.cooking-instruction ul li {
+    margin-top: 4.5px;
+    margin-right: 0;
+    margin-left: 10px;
+    margin-bottom: 4.5px;
+    list-style-type: none;
+}
+
+.cooking-instruction ul li:before {
+    content: '';
+    width: 3px;
+    height: 3px;
+    display: inline-block;
+    border-radius: 100%;
+    background-color: #8A8571;
+    position: relative;
+    left: -6px;
+    top: -4px;
+}
+
+.cooking-instruction video  {
+    border-radius: 10px;
+    width: 267px;
+    height: 178px;
+    object-fit: cover;
+    height: 178px;
+}
+
+#recipe .text :first-child  {
+    /* [disabled]margin: 0; */
+}
+
+.recipe-comment  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.recipe-comment img:first-child {
+    margin: 15px 0;
+    width: 98px;
+}
+
+.recipe-comment img:nth-child(2) {
+    width: 776px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+#sample_note h5 {
+    margin: 15px 0 0 0;
+    font-size: 16px;
+}
+
+.recipe-appendix p:first-child  , .recipe-appendix p:nth-of-type(3){
+    font-weight: bold;
+
+}
+
+/*詳細ページの「料理」に適用するCSSスタイル ここから*/
+
+
+/*詳細ページに適用するCSSスタイル ここまで*/
+
+
+
+/*デスクトップ用ページのCSSスタイル ここまで*/
+
+
+
+/* 1279px以下に適用されるCSS（タブレット用）ここから */
+
+@media screen and (max-width: 1279px) {
+    
+    
+
+    #wrapper {
+        margin: 0 auto;
+        color: #3D3832;
+        height: 100vh;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+    }
+    
+    p {
+    margin: 0;
+    line-height: 1.5em;
+    padding: 0;
+    color: #514B42;
+    font-size: 14px;
+}
+
+    /*トップページ用CSSスタイル ここから*/
+
+#wrapper-index {
+    width: 726px;
+    background-size: cover;
+    /* [disabled]height: 100%; */
+    margin: 0 auto;
+    text-align: left;
+    /* [disabled]max-height: 1185px; */
+}
+
+#index {
+    margin-top: 20px;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 726px;
+    margin-left: auto;
+    position: relative;
+    
+}
+
+#index .index-top   {
+    width: 726px;
+}
+
+#index .catch    {
+    height: 40px;
+}
+
+#index .catch-one {
+    padding-left: 0px;
+    padding-right: auto;
+}
+#index .index-top .map img{
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 15px;
+    width: 654px;
+    text-align: center;
+}
+#index .index-top .map {
+    text-align: center;
+}
+
+
+.index-bottom   {
+    margin: 0 auto;
+    width: 726px;
+}
+.hint  {
+    height: 270px;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+    display: flex;
+    width: 726px;
+    align-items: flex-end;
+}
+.hint img:first-child  {
+    height: 66px;
+    filter: brightness(200%);
+    margin-left: 80px;
+    margin-bottom: 0px;
+}
+.hint img:nth-child(2)   {
+    height: 56px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+.hint img:nth-child(3)   {
+    margin-left: 450px;
+    margin-top: 10px;
+}
+
+.index-bottom .button-group {
+    display: flex;
+    width: 726px;
+    align-items: flex-end;
+    padding: 0;
+    margin: 0;
+    justify-content: space-evenly;
+}
+
+.index-bottom .button-group li {
+    list-style: none;
+}
+
+.index-bottom .button-group img {
+    width: 112px;
+    margin: 0;
+    height: 112px;
+}
+
+.answer-text   {
+    height: 250px;
+    padding: 20px;
+    width: 726px;
+    border-radius: 40px;
+    margin: auto;
+    background-color: white;
+}
+
+.answer-text a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.answer-group   {
+    width: 726px;
+    margin: 0px auto 30px;
+}
+#answer-rice {
+    position: relative;
+    top: auto;
+    /* bottom: 800px; */
+}
+#answer-vegitable {
+    position: relative;
+    top: auto;
+}
+#answer-wheat {
+    position: relative;
+    top: auto;
+} 
+
+
+
+.answer-group .map-distribution {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 163px;
+}
+.answer-group .answer-text {
+    margin-top: -280px;
+}
+
+
+
+
+
+/*「答え」部分の表示非表示と形状*/
+.answer-group {
+    /* [disabled]display: none; *//*はじめは非表示*/
+    /* [disabled]opacity: 0; *//*透過0*/
+	/*background: #fff;*/
+  	/*padding:50px 20px;*/
+}
+
+    
+/*リストページと詳細ページの両方に適用するCSSスタイル ここから*/
+
+#sample_note, #all_list {
+    margin: 60px 0;
+}
+
+#sample_note h1, #all_list h1   {
+    background-color: #FFFFFF;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    border-radius: 7.5px;
+    padding: 0;
+    justify-content: center;
+    margin: auto;
+    width: 726px;
+}
+
+#sample_note h1 img, #all_list h1 img {
+    height: 32px;
+    margin-bottom: 0px;
+}
+
+.sample-introduction article , .list-introduction article{
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 654px;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+}
+
+/*リストページと詳細ページの両方に適用するCSSスタイル ここまで*/
+
+    
+/*リストページに適用するCSSスタイル ここから*/
+
+.list-introduction article {
+    margin-bottom: 30px;
+}
+
+
+.list  {
+    margin: 0 auto;
+    padding: 39px;
+    border-radius: 20px;
+    width: 726px;
+    background-color: #E5E5E5;
+}
+
+.list ul {
+    padding: 0;
+
+}
+.list ul li {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-bottom: 0px;
+}
+.list ul li .cuisine-name {
+    font-weight: bold;
+    width: 647px;
+    font-size: 18px;
+}
+
+.list ul li img {
+    width: 257px;
+    height: auto;
+    border-radius: 15px;
+}
+ul li .list_text-right {
+    padding: 0 0 0 9px;
+    width: 388px;
+}
+ul li .level {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+    height: 52px;
+    width: auto;
+}
+    
+ul li .level p:first-child, ul li .level p:nth-child(3) {
+    font-size: 13px;
+    width: 160px;
+}
+ul li .level p:nth-child(2)  , ul li .level p:nth-child(4){
+    font-size: 13px;
+    padding: 0px;
+    width: 219px;
+}
+ul li .list-content-text {
+    height: 120px;
+}
+
+.list-comment article   {
+    margin-top: 90px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 654px;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+}
+.list-comment article p {
+    margin: 0 0 19px;
+    font-size: 14px;
+}
+.list-comment article p:first-child  {
+    font-size: 16px;
+    width: inherit;
+    /* [disabled]justify-content: center; */
+    text-align: center;
+
+}
+
+
+/*リストページに適用するCSSスタイル ここまで*/
+
+/*詳細ページに適用するCSSスタイル ここから*/
+
+
+/*（注）詳細ページ構成
+サブコンテンツ：「導入」の項目（写真(大)と郷土料理の簡単な紹介）
+メインコンテンツ：「旅行」の項目、「料理」の項目
+*/
+
+
+/*詳細ページの「導入」に適用するCSSスタイル ここから*/
+
+.main-introduction {
+    margin-bottom: 45px;
+}
+
+.introduction-photo   {
+    width: 654px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.textandpicture_left   {
+    margin-right: 0;
+    margin-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 502px;
+    margin-top: 30px;
+}
+
+.shirakobato {
+    width: 120px;
+    margin-top: 77px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    height: 120px;
+
+}
+
+.balloon_left   {
+    width: 138px;
+    margin: 15px 47px 20px 16px;
+    height: auto;
+}
+
+.balloon_right {
+    width: 174px;
+    margin-top: 15px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    height: auto;
+}
+
+.shibusawa   {
+    width: 143px;
+    height: 262px;
+    padding: 10px;
+    margin-top: 87px;
+}
+
+/*詳細ページの「導入」に適用するCSSスタイル ここまで*/
+
+
+/*詳細ページの「旅行」と「料理」両方に適用するCSSスタイル ここから*/
+
+.main-article  {
+    margin: 75px auto 0;
+    width: 726px;
+}
+
+.main-article .title   {
+    margin-right: 55px;
+    margin-bottom: 30px;
+    margin-left: 55px;
+    display: flex;
+    height: 65px;
+}
+
+.lightbulb {
+    width: 52px;
+    height: 65px;
+    margin-right: -52px;
+    z-index: 2;
+}
+
+#sample_note h2   {
+    background-color: #FFFFFF;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 726px;
+    border-radius: 30px;
+    z-index: 1;
+}
+
+#travel , #recipe{
+    margin: auto;
+    width: 726px;
+    background-color: #E5E5E5;
+    padding-top: 30px;
+    border-radius: 20px;
+    padding-bottom: 50px;
+}
+
+.travel-contents  , .recipe-contents{
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+    width: 654px;
+
+}
+
+h3 {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+/*詳細ページの「旅行」と「料理」両方に適用するCSSスタイル ここまで*/
+
+
+/*詳細ページの「旅行」に適用するCSSスタイル ここから*/
+
+main-introduction  {
+    padding: 10px 0;
+}
+
+.restaurant-introduction    {
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+}
+.restaurant-introduction img {
+    width:270px;
+    height:199px;
+    object-fit: cover;
+    margin: auto;
+    border-radius: 10px;
+}
+.restaurant-introduction .text {
+    width: auto;
+    padding-right: 15px;
+    font-size: 14px;
+}
+.recommendation  {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.recommendation img {
+    width: 300px;
+    object-fit: cover;
+    margin: auto;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+.recommendation .text {
+    width: auto;
+    font-size: 14px;
+    line-height: 1em;
+}
+#travel h4 {
+    padding: 15px 0;
+}
+#travel .text :first-child  {
+    padding: 5px 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5em
+
+}
+#travel .text :nth-child(2)   {
+    margin: 0;
+    line-height: 1.5em;
+}
+.travel-longphoto {
+    width: 654px;
+    object-fit: cover;
+    border-radius: 10px;
+    height: 218px;
+}
+
+/*詳細ページの「旅行」に適用するCSSスタイル ここまで*/
+
+
+/*詳細ページの「料理」に適用するCSSスタイル ここから*/
+
+.recipe-first-row {
+    height: 333px;
+    display: flex;
+    justify-content: space-between;
+    width: 654px;
+    margin-top: 10px;
+}
+.recipe-first-row img {
+    border-radius: 10px;
+    width: 38%;
+    height: 87%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.recipe-list {
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.recipe-list ul {
+    margin: 5px 0 0 0;
+    padding: 0;
+}
+
+.recipe-list li  {
+    font-size: 13px;
+    padding: 4px 0;
+    list-style: none;
+}
+
+.cooking-instruction {
+    display: flex;
+    justify-content: space-between;
+    width: 654px;
+    flex-wrap: wrap;
+}
+
+#recipe h4 {
+    margin: 5px 0;
+}
+
+.cooking-instruction ul   {
+    padding: 0;
+    margin: 0;
+    width: 351px;
+}
+
+.cooking-instruction ul li {
+    margin-top: 4.5px;
+    margin-right: 0;
+    margin-left: 10px;
+    margin-bottom: 4.5px;
+    list-style-type: none;
+    font-size: 14px;
+}
+
+.cooking-instruction ul li:before {
+    content: '';
+    width: 3px;
+    height: 3px;
+    display: inline-block;
+    border-radius: 100%;
+    background-color: #8A8571;
+    position: relative;
+    left: -6px;
+    top: -4px;
+}
+
+.cooking-instruction video  {
+    border-radius: 10px;
+    width: 279px;
+    height: 210px;
+    object-fit: cover;
+    margin: 10px auto;
+    /* [disabled]height: 178px; */
+}
+
+#recipe .text :first-child  {
+    /* [disabled]margin: 0; */
+}
+
+.recipe-comment  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.recipe-comment img:first-child {
+    margin: 15px 0;
+    width: 98px;
+}
+
+.recipe-comment img:nth-child(2) {
+    width: 80%;
+    height: 70px;
+    margin-right: 15px;
+}
+
+#sample_note h5 {
+    margin: 15px 0 0 0;
+    font-size: 16px;
+}
+
+.recipe-appendix p:first-child  , .recipe-appendix p:nth-of-type(3){
+    font-weight: bold;
+
+}
+
+/*詳細ページの「料理」に適用するCSSスタイル ここから*/
+
+
+/*詳細ページに適用するCSSスタイル ここまで*/ 
+    
+    
+}
+
+/* 1279px以下に適用されるCSS（タブレット用）ここまで */
+
+
+
+
+
+/* 767px以下に適用されるCSS（タブレット用）ここから */
+
+@media screen and (max-width: 767px) {
+    #wrapper {
+        margin: 0 auto;
+        color: #3D3832;
+        height: 100vh;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+    }
+    
+    p {
+        margin: 0;
+        line-height: 1.5em;
+        padding: 0;
+        color: #514B42;
+        font-size: 14px;
+    }
+    
+    li {
+        margin: 0;
+        padding: 0;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    
+    
+    body{
+        min-width: 320px;
+    }
+    
+    hr{
+        margin: 20px 0;
+    }
+
+    
+/*全ページ：ヘッダー部分 ここから*/
+
+header {
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    /* [disabled]align-items: center; */
+    border-radius: 10px;
+    background-color: white;
+    max-width: 767px;
+    min-width: 300px;
+}
+#headertitle {
+    height: 45px;
+    width: 175px;
+    margin-left: 10px;
+}
+#headermenu {
+    display: flex;
+    height: 45px;
+    margin-right: 10px;
+    align-items: center;
+    margin-top: 3px;
+}
+#headermenu a {
+    text-decoration: none;
+}
+
+#headermenu p {
+    font-size: 16px;
+    font-weight: bolder;
+    padding-top: 5px;
+}
+
+#headermenu img {
+    width: 45px;
+    margin-left: 4px;
+    margin-right: 0;
+    filter: brightness(300%) opacity(70%) hue-rotate(5deg);
+}
+
+/*全ページ：ヘッダー部分 ここまで*/
+    
+
+    /*トップページ用CSSスタイル ここから*/
+
+#wrapper-index {
+    width: 320px;
+    background-size: cover;
+    /* [disabled]height: 100%; */
+    margin: 0 auto;
+    text-align: left;
+    /* [disabled]max-height: 1185px; */
+}
+
+#index {
+    margin-top: 20px;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 320px;
+    margin-left: auto;
+    position: relative;
+    
+}
+
+#index .index-top   {
+    width: 320px;
+}
+
+#index .catch    {
+    width: 300px;
+    height: auto;
+    margin-left:10px;
+}
+
+#index .catch-one {
+    padding-left: 0px;
+    padding-right: auto;
+}
+#index .index-top .map img{
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 15px;
+    width: 300px;
+    text-align: center;
+}
+#index .index-top .map {
+    text-align: center;
+}
+
+
+.index-bottom   {
+    margin: 0 auto;
+    width: 300px;
+}
+.hint  {
+    height: 430px;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+    display: flex;
+    width: 300px;
+    align-items: flex-end;
+}
+.hint img:first-child  {
+    height: 56px;
+    filter: brightness(200%);
+    margin-left: auto;
+    margin-bottom: 0px;
+    margin-top: 171px;
+}
+.hint img:nth-child(2)   {
+    width: 240px;
+    height: auto;
+    margin:auto;
+}
+.hint img:nth-child(3)   {
+    width: 150px;
+    margin-left: 168px;
+    margin-top: 102px;
+}
+
+.index-bottom .button-group {
+    display: flex;
+    width: 300px;
+    align-items: flex-end;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+}
+
+.index-bottom .button-group li {
+    list-style: none;
+}
+
+.index-bottom .button-group img {
+    width: 60px;
+    margin: 0;
+    height: auto;
+}
+
+.answer-text   {
+    height: 430px;
+    padding: 20px;
+    width: 300px;
+    border-radius: 40px;
+    margin: auto;
+    background-color: white;
+}
+
+.answer-text a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.answer-group   {
+    width: auto;
+    height: 430px;
+    margin: 0px auto 30px;
+}
+    
+#answer-rice {
+    position: relative;
+    top: auto;
+}
+#answer-vegitable {
+    position: relative;
+    top: auto;
+}
+#answer-wheat {
+    position: relative;
+    top: auto;
+} 
+
+
+
+.answer-group .map-distribution {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 163px;
+}
+.answer-group .answer-text {
+    margin-top: -460px;
+}
+
+
+
+
+
+/*「答え」部分の表示非表示と形状*/
+.answer-group {
+    /* [disabled]display: none; *//*はじめは非表示*/
+    /* [disabled]opacity: 0; *//*透過0*/
+	/*background: #fff;*/
+  	/*padding:50px 20px;*/
+}
+    
+    
+    
+/*リストページと詳細ページの両方に適用するCSSスタイル ここから*/
+
+#sample_note, #all_list {
+    margin: 60px 0;
+}
+
+#sample_note h1, #all_list h1   {
+    background-color: #FFFFFF;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    border-radius: 7.5px;
+    padding: 0;
+    justify-content: center;
+    margin: auto;
+    width: 360px;
+}
+
+#sample_note h1 img, #all_list h1 img {
+    height: 32px;
+    margin-bottom: 0px;
+}
+
+.sample-introduction article , .list-introduction article{
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+}
+
+/*リストページと詳細ページの両方に適用するCSSスタイル ここまで*/
+
+    
+/*リストページに適用するCSSスタイル ここから*/
+
+.list-introduction article {
+    margin-bottom: 30px;
+}
+
+
+.list  {
+    border-radius: 20px;
+    width: 320px;
+    background-color: #E5E5E5;
+    margin: auto;
+}
+
+.list ul {
+    padding: 0;
+    width: 270px;
+    margin: 0 0 0 -15px;
+}
+    
+.list ul li {
+    list-style: none;
+    margin:auto;
+    padding: 0;
+    width: 263px;
+    height: auto;
+}
+.list ul li .cuisine-name {
+    font-weight: bold;
+    width: 236px;
+    font-size: 17px;
+}
+
+.list ul li img {
+    width: 261px;
+    height: auto;
+    margin: 10px auto;
+    border-radius: 15px;
+}
+ul li .list_text-right {
+    padding: 0 0 0 0px;
+    width: 270px;
+}
+ul li .level {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+    height: auto;
+}
+    
+ul li .level p:first-child, ul li .level p:nth-child(3) {
+    font-size: 13px;
+    width: 163px;
+    height: auto;
+}
+ul li .level p:nth-child(2)  , ul li .level p:nth-child(4){
+    font-size: 14px;
+    padding: 0px;
+    width: 239px;
+    height: auto;
+}
+ul li .list-content-text {
+    height: auto;
+    margin-top:10px;
+}
+
+.list-comment article   {
+    margin-top: 90px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+}
+.list-comment article p {
+    margin: 0 0 19px;
+    font-size: 14px;
+}
+.list-comment article p:first-child  {
+    font-size: 15px;
+    width: inherit;
+    /* [disabled]justify-content: center; */
+    text-align: center;
+
+}
+
+
+/*リストページに適用するCSSスタイル ここまで*/
+
+/*詳細ページに適用するCSSスタイル ここから*/
+
+
+/*（注）詳細ページ構成
+サブコンテンツ：「導入」の項目（写真(大)と郷土料理の簡単な紹介）
+メインコンテンツ：「旅行」の項目、「料理」の項目
+*/
+
+
+/*詳細ページの「導入」に適用するCSSスタイル ここから*/
+
+.main-introduction {
+    margin-bottom: 45px;
+}
+
+.introduction-photo   {
+    width: 321px;
+    height: 159px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+    
+.textandpicture_left   {
+    margin-right: 0;
+    margin-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 320px;
+    margin-top: 30px;
+}
+
+.shirakobato {
+    width: 80px;
+    margin-top: 77px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    height: 78px;
+}
+
+.balloon_left   {
+    width: 138px;
+    margin: 15px 47px 20px 16px;
+    height: auto;
+}
+
+.balloon_right {
+    width: 174px;
+    margin: 45px 0 0 45px;
+    height: auto;
+}
+
+.shibusawa   {
+    width: 99px;
+    height: 149px;
+    margin: -151px 0px 0 220px;
+}
+
+/*詳細ページの「導入」に適用するCSSスタイル ここまで*/
+
+
+/*詳細ページの「旅行」と「料理」両方に適用するCSSスタイル ここから*/
+
+.main-article  {
+    margin: 75px auto 0;
+    width: 320px;
+}
+
+.main-article .title   {
+    margin-right: 55px;
+    margin-bottom: 30px;
+    margin-left: 55px;
+    display: flex;
+    height: 65px;
+}
+    .main-article .title h2 img{
+    height: 15px;
+    }
+
+.lightbulb {
+    width: 51px;
+    height: 60px;
+    margin-right: 0px;
+    z-index: 2;
+    margin-left: -40px;
+}
+
+#sample_note h2   {
+    background-color: #FFFFFF;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    border-radius: 30px;
+    z-index: 1;
+}
+
+#travel , #recipe{
+    margin: auto;
+    width: 320px;
+    background-color: #E5E5E5;
+    padding-top: 30px;
+    border-radius: 20px;
+    padding-bottom: 50px;
+}
+
+.travel-contents  , .recipe-contents{
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+    width: 300px;
+
+}
+
+h3 {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+/*詳細ページの「旅行」と「料理」両方に適用するCSSスタイル ここまで*/
+
+
+/*詳細ページの「旅行」に適用するCSSスタイル ここから*/
+
+main-introduction  {
+    padding: 15px 0;
+}
+
+.restaurant-introduction    {
+    display: flex;
+    flex-wrap:wrap;
+    height: auto;
+    justify-content: space-between;
+}
+.restaurant-introduction img {
+    width:300px;
+    height:auto;
+    object-fit: cover;
+    margin: auto;
+    border-radius: 10px;
+}
+.restaurant-introduction .text {
+    width: 300px;
+    padding-right: 0px;
+    font-size: 14px;
+}
+.recommendation  {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.recommendation img {
+    width: 300px;
+    object-fit: cover;
+    margin: auto;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+.recommendation .text {
+    width: auto;
+    font-size: 14px;
+    line-height: 1em;
+}
+#travel h4 {
+    padding: 15px 0;
+}
+#travel .text :first-child  {
+    padding: 5px 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5em
+
+}
+#travel .text :nth-child(2)   {
+    margin: 0;
+    line-height: 1.5em;
+}
+.travel-longphoto {
+    width: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    height: 218px;
+}
+
+/*詳細ページの「旅行」に適用するCSSスタイル ここまで*/
+
+
+/*詳細ページの「料理」に適用するCSSスタイル ここから*/
+
+.recipe-first-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 300px;
+    height: auto;
+    margin-top: 10px;
+}
+.recipe-first-row img {
+    border-radius: 10px;
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 20px
+}
+
+.recipe-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.recipe-list ul {
+    width: 300px;
+    margin: 5px 0 0 0;
+    padding: 0;
+}
+
+.recipe-list li  {
+    font-size: 13px;
+    padding: 4px 0;
+    list-style: none;
+}
+
+.cooking-instruction {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    flex-wrap: wrap;
+}
+    
+    .ingredients {
+        display: flex;
+        flex-wrap: wrap;
+        width: 300px;
+    }
+
+#recipe h4 {
+    margin: 5px 0;
+}
+
+.cooking-instruction ul   {
+    padding: 0;
+    margin: 0;
+    width: 300px;
+}
+
+.cooking-instruction ul li {
+    margin-top: 4.5px;
+    margin-right: 0;
+    margin-left: 10px;
+    margin-bottom: 4.5px;
+    list-style-type: none;
+    font-size: 14px;
+}
+
+
+
+.cooking-instruction video  {
+    border-radius: 10px;
+    width: 279px;
+    height: 210px;
+    object-fit: cover;
+    margin: 10px auto;
+    /* [disabled]height: 178px; */
+}
+
+#recipe .text :first-child  {
+    /* [disabled]margin: 0; */
+}
+
+.recipe-comment  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.recipe-comment img:first-child {
+    margin: 0;
+    width: 40px;
+}
+
+.recipe-comment img:nth-child(2) {
+    width: 85%;
+    height: 40px;
+}
+
+#sample_note h5 {
+    margin: 15px 0 0 0;
+    font-size: 13px;
+}
+
+.recipe-appendix p:first-child  , .recipe-appendix p:nth-of-type(3){
+    font-size: 12px;
+    font-weight: bold;
+
+}
+
+/*詳細ページの「料理」に適用するCSSスタイル ここから*/
+
+
+/*詳細ページに適用するCSSスタイル ここまで*/ 
+    
+    
+}
+
+/* 767px以下に適用されるCSS（タブレット用）ここまで */

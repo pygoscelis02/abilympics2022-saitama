@@ -1,0 +1,4 @@
+注記事項
+リストページ（all_list.html）について
+引用画像：農林水産省「うちの郷土料理」より料理写真を使用。
+https://www.maff.go.jp/j/keikaku/syokubunka/k_ryouri/search_menu/area/saitama.html
